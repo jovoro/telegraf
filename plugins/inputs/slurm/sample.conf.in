@@ -8,7 +8,7 @@
   # token = "topSecret"
 
   ## SLURM REST API version to use.
-  ## Supported values: "0038" (default), "0041"
+  ## Supported values: "0038" (default), "0041", "0044"
   # api_version = "0038"
 
   ## Enabled endpoints

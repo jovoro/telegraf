@@ -1,0 +1,909 @@
+{
+    "partitions": [
+        {
+            "nodes": {
+                "allowed_allocation": "",
+                "configured": "node[01-06]",
+                "total": 6
+            },
+            "accounts": {
+                "allowed": "",
+                "deny": ""
+            },
+            "groups": {
+                "allowed": ""
+            },
+            "qos": {
+                "allowed": "",
+                "deny": "",
+                "assigned": ""
+            },
+            "alternate": "",
+            "tres": {
+                "billing_weights": "",
+                "configured": "cpu=320,mem=628000M,node=6,billing=320"
+            },
+            "cluster": "",
+            "select_type": [],
+            "cpus": {
+                "task_binding": 0,
+                "total": 320
+            },
+            "defaults": {
+                "memory_per_cpu": 0,
+                "partition_memory_per_cpu": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "partition_memory_per_node": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 0
+                },
+                "time": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 60
+                },
+                "job": ""
+            },
+            "grace_time": 0,
+            "maximums": {
+                "cpus_per_node": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "cpus_per_socket": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "memory_per_cpu": 0,
+                "partition_memory_per_cpu": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "partition_memory_per_node": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 0
+                },
+                "nodes": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "shares": 1,
+                "oversubscribe": {
+                    "jobs": 1,
+                    "flags": []
+                },
+                "time": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 44640
+                },
+                "over_time_limit": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                }
+            },
+            "minimums": {
+                "nodes": 1
+            },
+            "name": "nodes",
+            "node_sets": "",
+            "priority": {
+                "job_factor": 1,
+                "tier": 1
+            },
+            "timeouts": {
+                "resume": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "suspend": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                }
+            },
+            "topology": "",
+            "partition": {
+                "state": [
+                    "UP"
+                ]
+            },
+            "suspend_time": {
+                "set": false,
+                "infinite": false,
+                "number": 0
+            }
+        },
+        {
+            "nodes": {
+                "allowed_allocation": "",
+                "configured": "node01",
+                "total": 1
+            },
+            "accounts": {
+                "allowed": "",
+                "deny": ""
+            },
+            "groups": {
+                "allowed": ""
+            },
+            "qos": {
+                "allowed": "",
+                "deny": "",
+                "assigned": ""
+            },
+            "alternate": "",
+            "tres": {
+                "billing_weights": "",
+                "configured": "cpu=16,mem=30000M,node=1,billing=16"
+            },
+            "cluster": "",
+            "select_type": [],
+            "cpus": {
+                "task_binding": 0,
+                "total": 16
+            },
+            "defaults": {
+                "memory_per_cpu": 0,
+                "partition_memory_per_cpu": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "partition_memory_per_node": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 0
+                },
+                "time": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 60
+                },
+                "job": ""
+            },
+            "grace_time": 0,
+            "maximums": {
+                "cpus_per_node": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "cpus_per_socket": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "memory_per_cpu": 0,
+                "partition_memory_per_cpu": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "partition_memory_per_node": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 0
+                },
+                "nodes": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "shares": 1,
+                "oversubscribe": {
+                    "jobs": 1,
+                    "flags": []
+                },
+                "time": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 44640
+                },
+                "over_time_limit": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                }
+            },
+            "minimums": {
+                "nodes": 1
+            },
+            "name": "n1",
+            "node_sets": "",
+            "priority": {
+                "job_factor": 1,
+                "tier": 1
+            },
+            "timeouts": {
+                "resume": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "suspend": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                }
+            },
+            "topology": "",
+            "partition": {
+                "state": [
+                    "UP"
+                ]
+            },
+            "suspend_time": {
+                "set": false,
+                "infinite": false,
+                "number": 0
+            }
+        },
+        {
+            "nodes": {
+                "allowed_allocation": "",
+                "configured": "node02",
+                "total": 1
+            },
+            "accounts": {
+                "allowed": "",
+                "deny": ""
+            },
+            "groups": {
+                "allowed": ""
+            },
+            "qos": {
+                "allowed": "",
+                "deny": "",
+                "assigned": ""
+            },
+            "alternate": "",
+            "tres": {
+                "billing_weights": "",
+                "configured": "cpu=16,mem=30000M,node=1,billing=16"
+            },
+            "cluster": "",
+            "select_type": [],
+            "cpus": {
+                "task_binding": 0,
+                "total": 16
+            },
+            "defaults": {
+                "memory_per_cpu": 0,
+                "partition_memory_per_cpu": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "partition_memory_per_node": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 0
+                },
+                "time": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 60
+                },
+                "job": ""
+            },
+            "grace_time": 0,
+            "maximums": {
+                "cpus_per_node": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "cpus_per_socket": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "memory_per_cpu": 0,
+                "partition_memory_per_cpu": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "partition_memory_per_node": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 0
+                },
+                "nodes": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "shares": 1,
+                "oversubscribe": {
+                    "jobs": 1,
+                    "flags": []
+                },
+                "time": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 44640
+                },
+                "over_time_limit": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                }
+            },
+            "minimums": {
+                "nodes": 1
+            },
+            "name": "n2",
+            "node_sets": "",
+            "priority": {
+                "job_factor": 1,
+                "tier": 1
+            },
+            "timeouts": {
+                "resume": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "suspend": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                }
+            },
+            "topology": "",
+            "partition": {
+                "state": [
+                    "UP"
+                ]
+            },
+            "suspend_time": {
+                "set": false,
+                "infinite": false,
+                "number": 0
+            }
+        },
+        {
+            "nodes": {
+                "allowed_allocation": "",
+                "configured": "node03",
+                "total": 1
+            },
+            "accounts": {
+                "allowed": "",
+                "deny": ""
+            },
+            "groups": {
+                "allowed": ""
+            },
+            "qos": {
+                "allowed": "",
+                "deny": "",
+                "assigned": ""
+            },
+            "alternate": "",
+            "tres": {
+                "billing_weights": "",
+                "configured": "cpu=16,mem=30000M,node=1,billing=16"
+            },
+            "cluster": "",
+            "select_type": [],
+            "cpus": {
+                "task_binding": 0,
+                "total": 16
+            },
+            "defaults": {
+                "memory_per_cpu": 0,
+                "partition_memory_per_cpu": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "partition_memory_per_node": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 0
+                },
+                "time": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 60
+                },
+                "job": ""
+            },
+            "grace_time": 0,
+            "maximums": {
+                "cpus_per_node": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "cpus_per_socket": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "memory_per_cpu": 0,
+                "partition_memory_per_cpu": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "partition_memory_per_node": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 0
+                },
+                "nodes": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "shares": 1,
+                "oversubscribe": {
+                    "jobs": 1,
+                    "flags": []
+                },
+                "time": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 44640
+                },
+                "over_time_limit": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                }
+            },
+            "minimums": {
+                "nodes": 1
+            },
+            "name": "n3",
+            "node_sets": "",
+            "priority": {
+                "job_factor": 1,
+                "tier": 1
+            },
+            "timeouts": {
+                "resume": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "suspend": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                }
+            },
+            "topology": "",
+            "partition": {
+                "state": [
+                    "UP"
+                ]
+            },
+            "suspend_time": {
+                "set": false,
+                "infinite": false,
+                "number": 0
+            }
+        },
+        {
+            "nodes": {
+                "allowed_allocation": "",
+                "configured": "node04",
+                "total": 1
+            },
+            "accounts": {
+                "allowed": "",
+                "deny": ""
+            },
+            "groups": {
+                "allowed": ""
+            },
+            "qos": {
+                "allowed": "",
+                "deny": "",
+                "assigned": ""
+            },
+            "alternate": "",
+            "tres": {
+                "billing_weights": "",
+                "configured": "cpu=16,mem=30000M,node=1,billing=16"
+            },
+            "cluster": "",
+            "select_type": [],
+            "cpus": {
+                "task_binding": 0,
+                "total": 16
+            },
+            "defaults": {
+                "memory_per_cpu": 0,
+                "partition_memory_per_cpu": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "partition_memory_per_node": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 0
+                },
+                "time": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 60
+                },
+                "job": ""
+            },
+            "grace_time": 0,
+            "maximums": {
+                "cpus_per_node": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "cpus_per_socket": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "memory_per_cpu": 0,
+                "partition_memory_per_cpu": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "partition_memory_per_node": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 0
+                },
+                "nodes": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "shares": 1,
+                "oversubscribe": {
+                    "jobs": 1,
+                    "flags": []
+                },
+                "time": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 44640
+                },
+                "over_time_limit": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                }
+            },
+            "minimums": {
+                "nodes": 1
+            },
+            "name": "n4",
+            "node_sets": "",
+            "priority": {
+                "job_factor": 1,
+                "tier": 1
+            },
+            "timeouts": {
+                "resume": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "suspend": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                }
+            },
+            "topology": "",
+            "partition": {
+                "state": [
+                    "UP"
+                ]
+            },
+            "suspend_time": {
+                "set": false,
+                "infinite": false,
+                "number": 0
+            }
+        },
+        {
+            "nodes": {
+                "allowed_allocation": "",
+                "configured": "node05",
+                "total": 1
+            },
+            "accounts": {
+                "allowed": "",
+                "deny": ""
+            },
+            "groups": {
+                "allowed": ""
+            },
+            "qos": {
+                "allowed": "",
+                "deny": "",
+                "assigned": ""
+            },
+            "alternate": "",
+            "tres": {
+                "billing_weights": "",
+                "configured": "cpu=128,mem=254000M,node=1,billing=128"
+            },
+            "cluster": "",
+            "select_type": [],
+            "cpus": {
+                "task_binding": 0,
+                "total": 128
+            },
+            "defaults": {
+                "memory_per_cpu": 0,
+                "partition_memory_per_cpu": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "partition_memory_per_node": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 0
+                },
+                "time": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 60
+                },
+                "job": ""
+            },
+            "grace_time": 0,
+            "maximums": {
+                "cpus_per_node": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "cpus_per_socket": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "memory_per_cpu": 0,
+                "partition_memory_per_cpu": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "partition_memory_per_node": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 0
+                },
+                "nodes": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "shares": 1,
+                "oversubscribe": {
+                    "jobs": 1,
+                    "flags": []
+                },
+                "time": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 44640
+                },
+                "over_time_limit": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                }
+            },
+            "minimums": {
+                "nodes": 1
+            },
+            "name": "n5",
+            "node_sets": "",
+            "priority": {
+                "job_factor": 1,
+                "tier": 1
+            },
+            "timeouts": {
+                "resume": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "suspend": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                }
+            },
+            "topology": "",
+            "partition": {
+                "state": [
+                    "UP"
+                ]
+            },
+            "suspend_time": {
+                "set": false,
+                "infinite": false,
+                "number": 0
+            }
+        },
+        {
+            "nodes": {
+                "allowed_allocation": "",
+                "configured": "node06",
+                "total": 1
+            },
+            "accounts": {
+                "allowed": "",
+                "deny": ""
+            },
+            "groups": {
+                "allowed": ""
+            },
+            "qos": {
+                "allowed": "",
+                "deny": "",
+                "assigned": ""
+            },
+            "alternate": "",
+            "tres": {
+                "billing_weights": "",
+                "configured": "cpu=128,mem=254000M,node=1,billing=128"
+            },
+            "cluster": "",
+            "select_type": [],
+            "cpus": {
+                "task_binding": 0,
+                "total": 128
+            },
+            "defaults": {
+                "memory_per_cpu": 0,
+                "partition_memory_per_cpu": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "partition_memory_per_node": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 0
+                },
+                "time": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 60
+                },
+                "job": ""
+            },
+            "grace_time": 0,
+            "maximums": {
+                "cpus_per_node": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "cpus_per_socket": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "memory_per_cpu": 0,
+                "partition_memory_per_cpu": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "partition_memory_per_node": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 0
+                },
+                "nodes": {
+                    "set": false,
+                    "infinite": true,
+                    "number": 0
+                },
+                "shares": 1,
+                "oversubscribe": {
+                    "jobs": 1,
+                    "flags": []
+                },
+                "time": {
+                    "set": true,
+                    "infinite": false,
+                    "number": 44640
+                },
+                "over_time_limit": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                }
+            },
+            "minimums": {
+                "nodes": 1
+            },
+            "name": "n6",
+            "node_sets": "",
+            "priority": {
+                "job_factor": 1,
+                "tier": 1
+            },
+            "timeouts": {
+                "resume": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                },
+                "suspend": {
+                    "set": false,
+                    "infinite": false,
+                    "number": 0
+                }
+            },
+            "topology": "",
+            "partition": {
+                "state": [
+                    "UP"
+                ]
+            },
+            "suspend_time": {
+                "set": false,
+                "infinite": false,
+                "number": 0
+            }
+        }
+    ],
+    "last_update": {
+        "set": true,
+        "infinite": false,
+        "number": 1778142489
+    },
+    "meta": {
+        "plugin": {
+            "type": "openapi/slurmctld",
+            "name": "Slurm OpenAPI slurmctld",
+            "data_parser": "data_parser/v0.0.44",
+            "accounting_storage": "accounting_storage/slurmdbd"
+        },
+        "client": {
+            "source": "localhost:6820(fd:45)",
+            "user": "root",
+            "group": "root"
+        },
+        "command": [],
+        "slurm": {
+            "version": {
+                "major": "25",
+                "micro": "3",
+                "minor": "11"
+            },
+            "release": "25.11.3",
+            "cluster": "cluster"
+        }
+    },
+    "errors": [],
+    "warnings": []
+}

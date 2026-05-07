@@ -96,8 +96,10 @@ func (s *Slurm) Init() error {
 		s.api = newV0038Client(u.Host, u.Scheme, userAgent, httpClient, s.Username, s.Token)
 	case "0041":
 		s.api = newV0041Client(u.Host, u.Scheme, userAgent, httpClient, s.Username, s.Token)
+	case "0044":
+		s.api = newV0044Client(u.Host, u.Scheme, userAgent, httpClient, s.Username, s.Token)
 	default:
-		return fmt.Errorf("unsupported api_version %q, valid values are \"0038\" and \"0041\"", s.APIVersion)
+		return fmt.Errorf("unsupported api_version %q, valid values are \"0038\", \"0041\" and \"0044\"", s.APIVersion)
 	}
 
 	return nil

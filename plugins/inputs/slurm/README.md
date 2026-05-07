@@ -5,9 +5,10 @@ for a [SLURM][slurm] instance using the REST API provided by the `slurmrestd`
 daemon.
 
 > [!NOTE]
-> This plugin currently supports versions v0.0.38 (SLURM 23.02.x) and v0.0.41
-> (SLURM 24.05.x) of the [SLURM REST API][api] which must be enabled in the
-> `slurmrestd` daemon. For more information, check the [documentation][config].
+> This plugin currently supports versions v0.0.38 (SLURM 23.02.x), v0.0.41
+> (SLURM 24.05.x) and v0.0.44 (SLURM 25.11.x) of the [SLURM REST API][api]
+> which must be enabled in the `slurmrestd` daemon. For more information,
+> check the [documentation][config].
 
 ⭐ Telegraf v1.32.0
 🏷️ server
@@ -38,7 +39,7 @@ plugin ordering. See [CONFIGURATION.md][CONFIGURATION.md] for more details.
   # token = "topSecret"
 
   ## SLURM REST API version to use.
-  ## Supported values: "0038" (default), "0041"
+  ## Supported values: "0038" (default), "0041", "0044"
   # api_version = "0038"
 
   ## Enabled endpoints
@@ -179,6 +180,31 @@ gathered information.
     - accounts
     - node_count
     - node_list
+
+## Development
+
+Each testcase under `testcases/` contains a `responses/` directory with JSON
+fixtures captured from a real `slurmrestd` instance, and an `expected.out` file
+with the line-protocol metrics the plugin should produce from those fixtures.
+
+When adding a new testcase or updating fixtures after an API change, regenerate
+all `expected.out` files with:
+
+```bash
+go test ./plugins/inputs/slurm/ -run TestGenerateExpected -update
+```
+
+To capture fresh JSON fixtures from a live cluster, use `scontrol token` with a
+long lifespan so the token does not expire mid-session:
+
+```bash
+TOKEN=$(scontrol token lifespan=INFINITE username=<user> | awk -F= '{print $2}')
+BASE="http://<host>:<port>"
+for ep in diag jobs nodes partitions reservations; do
+  curl -sf -H "X-SLURM-USER-NAME: <user>" -H "X-SLURM-USER-TOKEN: $TOKEN" \
+    "$BASE/slurm/v0.0.44/$ep/" | python3 -m json.tool > testcases/gather-0044/responses/$ep.json
+done
+```
 
 ## Example Output
 
